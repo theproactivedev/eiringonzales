@@ -46,11 +46,6 @@
 	color: #fff;
 }
 
-.header h1 a:hover {
-	color: #fff3f2;
-	border-bottom: 2px solid #fff3f2;
-}
-
 .menu {
 	color: #fff;
 	display: block;
@@ -63,10 +58,6 @@
 	text-transform: uppercase;
 	cursor: pointer;
 	font-family: 'Pathway Gothic One', sans-serif;
-}
-
-.menu:hover {
-	color: #fff3f2;
 }
 
 nav {
@@ -105,19 +96,21 @@ nav ul a {
 	box-sizing: border-box;
 }
 
-nav ul a:hover {
-	background-color: #383737;
-	color: #c4bfbf;
-}
-
 .closeMenu p {
 	position: absolute;
 	top: 0;
 	right: 25px;
-	font-size: 50px;
+	font-size: 3.125rem;
 	padding: 10px 20px;
 	cursor: pointer;
 	color: #fff;
+}
+
+.header h1 a:hover,
+.menu:hover,
+nav ul a:hover,
+.closeMenu p:hover {
+	color: #FF4D6D;
 }
 
 .welcome-message {
@@ -132,13 +125,8 @@ nav ul a:hover {
 	color: #fff;
 }
 
-.welcome-message .btn-outlined {
-	border-color: #fff;
-	color: #fff;
-}
-
 .subject {
-  font-size: 35px;
+  font-size: 2.1875rem;
 	font-family: 'Pathway Gothic One', sans-serif;
 	letter-spacing: 2px;
   white-space: nowrap;
@@ -147,6 +135,14 @@ nav ul a:hover {
 	-moz-animation: type 4s steps(60, end);
 	-o-animation: type 4s steps(60, end);
   animation: type 4s steps(60, end);
+}
+
+.subject .const {
+	color: #d68fd6;
+}
+
+.subject .developer-name {
+	color: #FF4D6D;
 }
 
 @-webkit-keyframes type {
@@ -229,23 +225,43 @@ nav ul a:hover {
 	}
 }
 
-.subject + p {
-  font-size: 1.25rem; /* 20px */
-	z-index: 2;
-	margin-bottom: 30px;
+.sub {
+  font-size: 1rem;
 	letter-spacing: 1px;
 	white-space: normal;
+	color: #c4c4c4;
+	margin-bottom: 0;
+}
+
+.sub:last-of-type {
+	margin-bottom: 30px;
+}
+
+.yes-btn {
+	background-color: #FF4D6D;
+	border-color: #FF4D6D;
+	color: #fff3f2;
+	margin-top: 30px;
 }
 
 .yes-btn:hover {
-	background-color: #fff3f2;
+	background-color: transparent;
 	border-color: #fff3f2;
-  color: #000;
+  color: #fff3f2;
 }
 
 @media screen and (max-width: 470px) {
 	.header h1 {
 		width: 68%;
+	}
+
+	.subject {
+		font-size: 1.875rem;
+	}
+
+	.subject,
+	.sub {
+		letter-spacing: 0;
 	}
 }
 
@@ -284,11 +300,23 @@ nav ul a:hover {
 		padding: 2% 7.5%;
 	}
 
+	.home .welcome-message {
+		-webkit-transform: translate(-52.5%, -50%);
+		transform: translate(-52.5%, -50%);
+	}
+
 	.subject {
 		font-size: 4.375rem; /* 70px */
 	}
 
-	.subject + p {
+	.sub {
 		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.home .welcome-message {
+		-webkit-transform: translate(-80%, -50%);
+		transform: translate(-80%, -50%);
 	}
 }

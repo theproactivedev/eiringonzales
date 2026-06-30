@@ -39,10 +39,9 @@ const Contact = () => {
           </div>
           <div>
             <p>
-              I'm <em>Eirin Gonzales</em>. I create desktop and mobile-friendly
-              websites based on web standards to minimize costs, perform well
-              and reach your users.
+              Hi! I'm <strong>Eirin Gonzales</strong>. I'm a Front End Engineer. I've been working remotely since 2018. I've worked with different teams from different countries.
             </p>
+            <p>Drop me a message if you need a website for your business or if you're looking for a front end engineer to join your dev team.</p>
           </div>
         </aside>
       </section>

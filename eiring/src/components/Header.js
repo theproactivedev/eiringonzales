@@ -53,9 +53,9 @@ const Header = () => {
                 setMenuClassName("navigation closed");
               }}
             >
-              <Link to="/eiringonzales/portfolio" className="relative">
-                Portfolio
-              </Link>
+              <a href="https://www.linkedin.com/in/eirin-gonzales-5951aa9b/details/experience/" target="_blank" rel="noopener noreferrer" className="relative">
+                Experiences
+              </a>
             </li>
             <li>
               <a
@@ -80,17 +80,14 @@ const Header = () => {
         {isHome && (
           <section className="welcome-message group">
             <p className="subject">
-              do you need a website? <span className="blinking"> </span>
+              <span className="const">const</span> developer = <span className="developer-name">"Eirin Gonzales"</span>; <span className="blinking"> </span>
             </p>
-            <p className="sub">
-              Grab your <strong>free consultation</strong> and{" "}
-              <strong>price quote</strong> now!
-            </p>
-            <p>
-              <Link to="/eiringonzales/contact" className="btn-outlined yes-btn">
-                Yes! I need a website. &raquo;
-              </Link>
-            </p>
+            <p className="sub">&#47;&#47; front end engineer, working remotely</p>
+            <p className="sub">&#47;&#47; does her best to deliver real results on time</p>
+            <p className="sub">&#47;&#47; collaborates well with other people</p>
+            <Link to="/eiringonzales/contact" className="btn-outlined yes-btn">
+              Let&apos;s chat
+            </Link>
           </section>
         )}
       </section>

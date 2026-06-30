@@ -8,28 +8,13 @@ const Home = () => {
     <main>
       <section className="introduction wide-container">
         <div className="skills-module">
-          <h2>What's in it for you?</h2>
+          <h2>Looking for a Front End Engineer?</h2>
+          <p>Do you need a website but don't have the time to build it yourself?</p>
+          <p>Are you looking for someone you can confidently delegate the work to while you focus on growing your business and handling higher-priority tasks?</p>
+          <p>Or perhaps you&apos;re searching for a <strong>Front End Engineer</strong> who can transform UI designs into responsive, user-friendly web applications using reusable components and clean, high-quality code—delivering a seamless experience across all devices.</p>
+          <p>You need someone who communicates effectively, collaborates closely with you and your team, and can adapt to a wide range of development tasks.</p>
           <p>
-            Are you an entrepreneur, author, online marketer or an online coach
-            who needs someone to build your website or someone to customize your
-            WordPress website?
-          </p>
-          <p>
-            Or are you looking for a strong <strong>Front End Engineer</strong>{" "}
-            who can translate UI designs into user-friendly web application with
-            reusable components and high-quality code?
-          </p>
-          <p>
-            Do you want a developer who collaborates closely with your team to
-            work on a variety of tasks using{" "}
-            <strong>
-              React or Vue, Redux or VueX, Mongoose or MongoDB, Node.js or
-              Express.js
-            </strong>
-            ?
-          </p>
-          <p>
-            If so, <strong>you&#39;re in the right place!</strong>
+            If that sounds like what you're looking for, <strong>you&#39;re in the right place!</strong>
           </p>
         </div>
       </section>
@@ -41,16 +26,14 @@ const Home = () => {
             <span className="bold">I&#39;m Eirin Gonzales.</span>
           </p>
           <p>
-            I'm a <strong>Front End Engineer</strong>. And I can also handle
-            back end tasks related to MySQL, AWS Lambda functions and Node.js
+            I'm a <strong>Front End Engineer</strong>. I use React, Redux, Redux Saga and React Router. I also use CSS frameworks such as Bootstrap, Material UI and Chakra UI.
           </p>
           <p>
-            I do my best to code clean so your website and codebase is
-            performant, scalable and easy to maintain.
+            I do my best to writing clean, maintainable code so your website runs fast and scales effortlessly. I also prioritize readability, ensuring future developers can easily jump in and add new features.
           </p>
           <p>
-            On top of these web technologies, I'm prepared to learn new things
-            to solve complex problems and create new functionalities.
+            On top of these web technologies, I'm prepared to research, learn new things
+            and plan solutions that best fit your needs.
           </p>
         </div>
       </section>
@@ -59,7 +42,7 @@ const Home = () => {
         <Fade top>
           <div className="page-title">
             <Fade top>
-              <h3>Free Code Camp Certificates</h3>
+              <h3><i class="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
             </Fade>
           </div>
         </Fade>
@@ -93,11 +76,11 @@ const Home = () => {
 
       <section className="work">
         <div className="work-field">
-          <p>Do you want to see my previous work?</p>
+          <p>See my previous work experiences</p>
           <p>
-            <Link to="/eiringonzales/portfolio" className="clickHere btn-outlined">
+            <a href="https://www.linkedin.com/in/eirin-gonzales-5951aa9b/details/experience/" className="clickHere btn-outlined" target="_blank" rel="noopener noreferrer">
               Click here
-            </Link>
+            </a>
           </p>
         </div>
       </section>
@@ -107,26 +90,20 @@ const Home = () => {
           <Fade top>
             <div className="page-title">
               <Fade top>
-                <h3>Let's Talk</h3>
+                <h3><i class="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>
               </Fade>
             </div>
-          </Fade>
-          <p>
-            Do you need a website for your business to reach more people and{" "}
-            <strong>generate more leads and sales</strong>?
-          </p>
-          <p>
-            Or do you need a <strong>Proactive Front End Engineer</strong> to
-            collaborate effectively with your team and bring results?
-          </p>
-          <Link
-            role="button"
-            title="Contact Eirin Gonzales"
-            to="/eiringonzales/contact"
-            className="btn-outlined"
-          >
-            Contact me here
-          </Link>
+          </Fade> 
+          <div className="contact-button">
+            <Link
+              role="button"
+              title="Contact Eirin Gonzales"
+              to="/eiringonzales/contact"
+              className="btn-outlined"
+            >
+              Contact me here
+            </Link>
+          </div>
         </div>
       </section>
     </main>

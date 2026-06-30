@@ -132,6 +132,15 @@
 	margin-bottom: 30px;
 }
 
+.contact-button {
+	text-align: center;
+}
+
+.contact p:first-of-type {
+	margin-bottom: 14px;
+}
+
+
 .clickHere {
 	font-size: 1.625rem; /* 26px */
 	font-family: 'Pathway Gothic One', sans-serif;
