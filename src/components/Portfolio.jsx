@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
+import { assetUrl } from '../utils/assetUrl';
 import './css/portfolio.css';
 
 const backend_proj = [
@@ -87,7 +88,7 @@ const frontend_proj = [
 const Portfolio = () => {
   const [isHidden, setMlabWarningHidden] = useState(false)
   const backendProjects = backend_proj.map((proj, index) => {
-    const imgSrc = "https://theproactivedev.github.io/eiringonzales/" + proj.image;
+    const imgSrc = assetUrl(proj.image);
     return (
       <li className="skills-module" key={`back-skills-module-${index}`}>
         <div className="project-piece">
@@ -111,7 +112,7 @@ const Portfolio = () => {
   })
 
   const frontEndProjects = frontend_proj.map((proj, index) => {
-    const imgSrc = 'https://theproactivedev.github.io/eiringonzales/' + proj.image;
+    const imgSrc = assetUrl(proj.image);
     return (
       <li className="skills-module" key={`front-skills-module-${index}`}>
         <div className="project-piece">
@@ -139,9 +140,9 @@ const Portfolio = () => {
 
         <section className="dev-projects">
           <div>
-            <Fade top>
+            <Fade direction="up">
               <div className="page-title">
-                <Fade top>
+                <Fade direction="up">
                   <h3>Legacy Back End Projects</h3>
                 </Fade>
               </div>
@@ -149,9 +150,9 @@ const Portfolio = () => {
             <ul className="projects group">{backendProjects}</ul>
           </div>
           <div>
-            <Fade top>
+            <Fade direction="up">
               <div className="page-title">
-                <Fade top>
+                <Fade direction="up">
                   <h3>Legacy Front End Projects</h3>
                 </Fade>
               </div>
@@ -164,7 +165,7 @@ const Portfolio = () => {
 
       <section className="contact wide-container">
         <div>
-          <p>Do you want a <strong>Front End Engineer</strong> who's willing to learn new things and solve problems?</p>
+          <p>Do you want a <strong>Full Stack JavaScript Developer</strong> who's willing to learn new things and solve problems?</p>
           <p>Do you want someone in your team who will help <strong>build the next big product of your growing business</strong>?</p>
           <p>Let's talk!</p>
           <Link role="button" title="Contact Eirin Gonzales" to="/eiringonzales/contact" className="btn-outlined">Contact me here</Link>

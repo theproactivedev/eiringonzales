@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as typeformEmbed from '@typeform/embed';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
+import { assetUrl } from '../utils/assetUrl';
 import './css/contact.css';
 
 const Contact = () => {
@@ -33,15 +34,15 @@ const Contact = () => {
         <aside className="about">
           <div>
             <img
-              src="https://theproactivedev.github.io/eiringonzales/assets/eiringonzales.jpg"
+              src={assetUrl('assets/eiringonzales.jpg')}
               alt="Eirin Gonzales"
             />
           </div>
           <div>
             <p>
-              Hi! I'm <strong>Eirin Gonzales</strong>. I'm a Front End Engineer. I've been working remotely since 2018. I've worked with different teams from different countries.
+              Hi! I'm <strong>Eirin Gonzales</strong>. I'm a full stack JavaScript developer. I've been working remotely since 2018. I've worked with different teams from different countries.
             </p>
-            <p>Drop me a message if you need a website for your business or if you're looking for a front end engineer to join your dev team.</p>
+            <p>Drop me a message if you need a website for your business or if you're looking for a full stack developer to join your dev team.</p>
           </div>
         </aside>
       </section>
