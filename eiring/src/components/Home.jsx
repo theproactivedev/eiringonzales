@@ -1,17 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
+import { assetUrl } from '../utils/assetUrl';
 import './css/home.css';
 
 const Home = () => {
   return (
     <main>
+      <section className="bgimage home">
+        <section className="white-overlay">
+          <section className="welcome-message group">
+            <p className="subject">
+              <span className="const">const</span> developer = <span className="developer-name">"Eirin Gonzales"</span>; <span className="blinking"> </span>
+            </p>
+            <p className="sub">&#47;&#47; full stack JavaScript developer, working remotely</p>
+            <p className="sub">&#47;&#47; does her best to deliver real results on time</p>
+            <p className="sub">&#47;&#47; collaborates well with other people</p>
+            <Link to="/eiringonzales/contact" className="btn-outlined yes-btn">
+              Let&apos;s chat
+            </Link>
+          </section>
+        </section>
+      </section>
       <section className="introduction wide-container">
         <div className="skills-module">
-          <h2>Looking for a Front End Engineer?</h2>
+          <h2>Looking for a Full Stack JavaScript Developer?</h2>
           <p>Do you need a website but don't have the time to build it yourself?</p>
           <p>Are you looking for someone you can confidently delegate the work to while you focus on growing your business and handling higher-priority tasks?</p>
-          <p>Or perhaps you&apos;re searching for a <strong>Front End Engineer</strong> who can transform UI designs into responsive, user-friendly web applications using reusable components and clean, high-quality code—delivering a seamless experience across all devices.</p>
+          <p>Or perhaps you&apos;re searching for a <strong>Full Stack JavaScript Developer</strong> who can transform UI designs into responsive, user-friendly web applications using reusable components and clean, high-quality code—delivering a seamless experience across all devices.</p>
           <p>You need someone who communicates effectively, collaborates closely with you and your team, and can adapt to a wide range of development tasks.</p>
           <p>
             If that sounds like what you're looking for, <strong>you&#39;re in the right place!</strong>
@@ -26,7 +42,7 @@ const Home = () => {
             <span className="bold">I&#39;m Eirin Gonzales.</span>
           </p>
           <p>
-            I'm a <strong>Front End Engineer</strong>. I use React, Redux, Redux Saga and React Router. I also use CSS frameworks such as Bootstrap, Material UI and Chakra UI.
+            I'm a <strong>Full Stack JavaScript Developer</strong>. I use React, Redux, Redux Saga and React Router. I also use CSS frameworks such as Bootstrap, Material UI and Chakra UI.
           </p>
           <p>
             I do my best to writing clean, maintainable code so your website runs fast and scales effortlessly. I also prioritize readability, ensuring future developers can easily jump in and add new features.
@@ -39,10 +55,10 @@ const Home = () => {
       </section>
 
       <section className="certificates wide-container">
-        <Fade top>
+        <Fade direction="up">
           <div className="page-title">
-            <Fade top>
-              <h3><i class="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
+            <Fade direction="up">
+              <h3><i className="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
             </Fade>
           </div>
         </Fade>
@@ -54,7 +70,7 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="https://theproactivedev.github.io/eiringonzales/assets/portfolio/freecodecamp-certificate.png"
+                src={assetUrl('assets/portfolio/freecodecamp-certificate.png')}
                 alt="Free Code Camp Front End Certificate"
               />
             </a>
@@ -66,7 +82,7 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="https://theproactivedev.github.io/eiringonzales/assets/portfolio/back_end_dev.jpg"
+                src={assetUrl('assets/portfolio/back_end_dev.jpg')}
                 alt="Free Code Camp Back End Certificate"
               />
             </a>
@@ -87,10 +103,10 @@ const Home = () => {
 
       <section className="contact wide-container">
         <div>
-          <Fade top>
+          <Fade direction="up">
             <div className="page-title">
-              <Fade top>
-                <h3><i class="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>
+              <Fade direction="up">
+                <h3><i className="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>
               </Fade>
             </div>
           </Fade> 
