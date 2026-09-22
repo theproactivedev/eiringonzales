@@ -12,7 +12,7 @@ const Header = () => {
       <section className="header">
         <div>
           <h1>
-            <Link to="/eiringonzales">Eirin Gonzales</Link>
+            <Link to="/">Eirin Gonzales</Link>
           </h1>
           <span
             className="menu"
@@ -39,7 +39,7 @@ const Header = () => {
                 setMenuClassName("navigation closed");
               }}
             >
-              <Link to="/eiringonzales" className="relative">
+              <Link to="/" className="relative">
                 Services
               </Link>
             </li>
@@ -71,7 +71,7 @@ const Header = () => {
                 setMenuClassName("navigation closed");
               }}
             >
-              <Link to="/eiringonzales/contact" className="relative">
+              <Link to="/contact" className="relative">
                 Contact
               </Link>
             </li>

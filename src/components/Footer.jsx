@@ -10,8 +10,8 @@ const Footer = () => {
         <div>
           <h4>Menu</h4>
           <p><a href={assetUrl('assets/eiringonzales_resume.pdf')} target="_blank" rel="noopener noreferrer">See my Resume</a></p>
-          {/* <p><Link to="/eiringonzales/portfolio">Look at my Portfolio</Link></p> */}
-          <p><Link to="/eiringonzales/contact">Contact me here</Link></p>
+          {/* <p><Link to="/portfolio">Look at my Portfolio</Link></p> */}
+          <p><Link to="/contact">Contact me here</Link></p>
           <p><a href="https://ph.linkedin.com/in/eirin-gonzales-5951aa9b" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a></p>
         </div>
         <div>

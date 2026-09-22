@@ -168,7 +168,7 @@ const Portfolio = () => {
           <p>Do you want a <strong>Full Stack JavaScript Developer</strong> who's willing to learn new things and solve problems?</p>
           <p>Do you want someone in your team who will help <strong>build the next big product of your growing business</strong>?</p>
           <p>Let's talk!</p>
-          <Link role="button" title="Contact Eirin Gonzales" to="/eiringonzales/contact" className="btn-outlined">Contact me here</Link>
+          <Link role="button" title="Contact Eirin Gonzales" to="/contact" className="btn-outlined">Contact me here</Link>
         </div>
       </section>
     </main>

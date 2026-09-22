@@ -7,10 +7,10 @@ import Contact from './Contact';
 const Content = () => {
   return (
     <Routes>
-      <Route path="/eiringonzales" element={<Home />} />
-      {/* <Route path="/eiringonzales/portfolio" element={<Portfolio />} /> */}
-      <Route path="/eiringonzales/contact" element={<Contact />} />
-      <Route path="*" element={<Navigate to="/eiringonzales" replace />} />
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

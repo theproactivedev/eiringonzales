@@ -16,7 +16,7 @@ const Home = () => {
             <p className="sub">&#47;&#47; full stack JavaScript developer, working remotely</p>
             <p className="sub">&#47;&#47; does her best to deliver real results on time</p>
             <p className="sub">&#47;&#47; collaborates well with other people</p>
-            <Link to="/eiringonzales/contact" className="btn-outlined yes-btn">
+            <Link to="/contact" className="btn-outlined yes-btn">
               Let&apos;s chat
             </Link>
           </section>
@@ -114,7 +114,7 @@ const Home = () => {
             <Link
               role="button"
               title="Contact Eirin Gonzales"
-              to="/eiringonzales/contact"
+              to="/contact"
               className="btn-outlined"
             >
               Contact me here
