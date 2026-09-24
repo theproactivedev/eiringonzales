@@ -195,6 +195,10 @@ p {
 }
 
 /* TEXT */
+.text-black {
+	color: #000;
+}
+
 .text-pink {
 	color: #FF4D6D;
 }

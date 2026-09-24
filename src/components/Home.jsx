@@ -45,7 +45,7 @@ const Home = () => {
         <div className="skills-module">
           <div className="title">
             <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
-            <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications — front end, back end, and database — without needing constant oversight.</p>
+            <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications <span className="text-black">— front end, back end, and database</span> — without needing constant oversight.</p>
           </div>
           <div className="value-list">
             <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
@@ -58,19 +58,15 @@ const Home = () => {
 
       <section className="aboutMe">
         <div>
-          <p>Hi,</p>
+          <p className="text-pink">Hi,</p>
           <p>
             <span className="bold">I&#39;m Eirin Gonzales.</span>
           </p>
           <p>
-            I'm a <strong>Full Stack JavaScript Developer</strong>. I use React, Redux, Redux Saga and React Router. I also use CSS frameworks such as Bootstrap, Material UI and Chakra UI.
+            I'm a full stack JavaScript developer with 8 years of remote experience, currently strongest on the front end and actively growing into full stack work. I write clean, maintainable code so the things I build run fast, scale, and stay easy for the next developer to pick up.
           </p>
           <p>
-            I do my best to writing clean, maintainable code so your website runs fast and scales effortlessly. I also prioritize readability, ensuring future developers can easily jump in and add new features.
-          </p>
-          <p>
-            On top of these web technologies, I'm prepared to research, learn new things
-            and plan solutions that best fit your needs.
+            Outside of the core stack, I'm comfortable researching, learning and deciding what a project needs. And I've used AI tools like Claude, Copilot, and ChatGPT and MCP servers as part of my workflow since 2024, to move faster without losing ownership of the code.
           </p>
         </div>
       </section>
