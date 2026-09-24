@@ -40,7 +40,7 @@ const Header = () => {
               }}
             >
               <Link to="/" className="relative">
-                Services
+                Home
               </Link>
             </li>
             <li>

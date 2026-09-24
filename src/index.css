@@ -193,6 +193,11 @@ p {
   color: #FFF;
 }
 
+/* TEXT */
+.text-pink {
+	color: #FF4D6D;
+}
+
 /* FOOTER CONTACT */
 .contact {
 	background-color: #fff3f2;

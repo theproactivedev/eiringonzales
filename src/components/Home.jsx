@@ -24,14 +24,16 @@ const Home = () => {
       </section>
       <section className="introduction wide-container">
         <div className="skills-module">
-          <h2>Looking for a Full Stack JavaScript Developer?</h2>
-          <p>Do you need a website but don't have the time to build it yourself?</p>
-          <p>Are you looking for someone you can confidently delegate the work to while you focus on growing your business and handling higher-priority tasks?</p>
-          <p>Or perhaps you&apos;re searching for a <strong>Full Stack JavaScript Developer</strong> who can transform UI designs into responsive, user-friendly web applications using reusable components and clean, high-quality code—delivering a seamless experience across all devices.</p>
-          <p>You need someone who communicates effectively, collaborates closely with you and your team, and can adapt to a wide range of development tasks.</p>
-          <p>
-            If that sounds like what you're looking for, <strong>you&#39;re in the right place!</strong>
-          </p>
+          <div className="title">
+            <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
+            <p>Someone who turns UI designs into responsive, production-ready applications — front end, back end, and database — without needing constant oversight.</p>
+          </div>
+          <div className="value-list">
+            <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
+            <div className="value-item"><span className="mk">02</span><h3>Comfortable end to end</h3><p>MERN and Next.js projects built solo — front end, APIs, database schema, and deployment included.</p></div>
+            <div className="value-item"><span className="mk">03</span><h3>Works across time zones</h3><p>8 years on distributed teams — collaborates closely with team members, available especially when needed.</p></div>
+            <div className="value-item"><span className="mk">04</span><h3>Learns what the project needs</h3><p>Actively deepening back end skills, and uses AI tools deliberately to move faster without cutting corners.</p></div>
+          </div>
         </div>
       </section>
 

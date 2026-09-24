@@ -1,27 +1,64 @@
 /* what's in it for you? */
 .introduction h2 {
-	font-family: 'Pathway Gothic One', sans-serif;
-	text-transform: uppercase;
+	font-size: 2.1875rem;
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
 	font-weight: normal;
 	margin-top: 0;
-	font-size: 1.75rem; /* 28px */
 }
 
 .introduction {
 	width: 100%;
-	background-color: #fff3f2;
+	background-color: #f9e2d8;
 	box-sizing: border-box;
+	color: #000;
 }
 
-.introduction div {
-	background-color: #fff;
-	color: #000;
-	padding: 15px;
-	width: 100%;
-	max-width: 600px;
-	box-sizing: border-box;
-	margin: 0 auto;
-	box-shadow: 0 8px 6px -6px #a6a6a6;
+.introduction .title p {
+	font-size: 1rem;
+}
+
+.value-list {
+	margin-top: 44px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0;
+}
+
+.value-item {
+	padding: 26px 28px;
+	border: 1px solid rgba(28, 29, 39, .12);
+}
+
+.value-item:nth-child(even) {
+	border-left: 0;
+}
+
+.value-item:nth-child(n + 3) {
+	border-top: 0;
+}
+
+.value-item .mk {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5rem;
+	color: #FF4D6D;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.value-item h3 {
+	font-size: 1.5rem;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+.value-item p {
+	margin: 8px 0 0;
+	font-size: 14.5px;
+	color: var(--muted);
 }
 
 /* ABOUT ME */
@@ -29,13 +66,13 @@
 .aboutMe {
 	width: 100%;
 	background-color: #000;
-  background-image: url('/assets/me.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+	background-image: url('/assets/me.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: top center;
-  height: 410px;
-  box-sizing: border-box;
+	height: 410px;
+	box-sizing: border-box;
 }
 
 .aboutMe div {
@@ -43,7 +80,7 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	background-color: rgba(255,255,255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 	box-sizing: border-box;
 	box-shadow: none;
 	padding: 20px;
@@ -91,7 +128,7 @@
 }
 
 .slideUp:nth-child(odd) {
-  animation-duration: 0.6s;
+	animation-duration: 0.6s;
 }
 
 .visible {
@@ -109,9 +146,9 @@
 
 .work {
 	display: flex;
-  background: url('/assets/code.jpg') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
+	background: url('/assets/code.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 	height: 40vh;
 	padding: 20px;
 }
@@ -123,7 +160,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 0 20px;
-	background-color: rgba(255,255,255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	text-align: center;
 }
 
@@ -142,7 +179,8 @@
 
 
 .clickHere {
-	font-size: 1.625rem; /* 26px */
+	font-size: 1.625rem;
+	/* 26px */
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -159,6 +197,20 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+}
+
+@media(max-width:700px) {
+	.value-list {
+		grid-template-columns: 1fr;
+	}
+
+	.value-item:nth-child(even) {
+		border-left: 1px solid rgba(28, 29, 39, .12);
+	}
+
+	.value-item + .value-item {
+		border-top: 0;
 	}
 }
 
@@ -180,20 +232,24 @@
 		display: table;
 	}
 
-	.certificate > div {
+	.certificate>div {
 		width: 49%;
 		display: table-cell;
 		padding-right: 1%;
 		padding-bottom: 3%;
 	}
 
-	.certificate > div:last-of-type {
+	.certificate>div:last-of-type {
 		padding-right: 0;
 		padding-left: 1%;
 	}
 }
 
 @media screen and (min-width: 920px) {
+	.introduction .title {
+		width: 50%;
+	}
+
 	.aboutMe div {
 		padding-left: 7.5%;
 	}
