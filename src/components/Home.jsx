@@ -57,13 +57,11 @@ const Home = () => {
       </section>
 
       <section className="certificates wide-container">
-        <Fade direction="up">
-          <div className="page-title">
-            <Fade direction="up">
-              <h3><i className="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
-            </Fade>
-          </div>
-        </Fade>
+        <div className="page-title">
+          <Fade>
+            <h3><i className="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
+          </Fade>
+        </div>
         <div className="certificate">
           <div className="skills-module">
             <a
@@ -105,13 +103,11 @@ const Home = () => {
 
       <section className="contact wide-container">
         <div>
-          <Fade direction="up">
-            <div className="page-title">
-              <Fade direction="up">
-                <h3><i className="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>
-              </Fade>
-            </div>
-          </Fade> 
+          <div className="page-title">
+            <Fade>
+              <h3><i className="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>
+            </Fade>
+          </div>
           <div className="contact-button">
             <Link
               role="button"

@@ -12,7 +12,7 @@ const Header = () => {
       <section className="header">
         <div>
           <h1>
-            <Link to="/">Eirin Gonzales</Link>
+            <Link to="/">Eirin<span className="text-pink"><strong>.</strong></span>Gonzales</Link>
           </h1>
           <span
             className="menu"

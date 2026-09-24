@@ -140,23 +140,19 @@ const Portfolio = () => {
 
         <section className="dev-projects">
           <div>
-            <Fade direction="up">
-              <div className="page-title">
-                <Fade direction="up">
-                  <h3>Legacy Back End Projects</h3>
-                </Fade>
-              </div>
-            </Fade>
+            <div className="page-title">
+              <Fade>
+                <h3>Legacy Back End Projects</h3>
+              </Fade>
+            </div>
             <ul className="projects group">{backendProjects}</ul>
           </div>
           <div>
-            <Fade direction="up">
-              <div className="page-title">
-                <Fade direction="up">
-                  <h3>Legacy Front End Projects</h3>
-                </Fade>
-              </div>
-            </Fade>
+            <div className="page-title">
+              <Fade>
+                <h3>Legacy Front End Projects</h3>
+              </Fade>
+            </div>
             <ul className="projects group">{frontEndProjects}</ul>
 
           </div>
