@@ -111,10 +111,10 @@ const Home = () => {
 
       <section className="work">
         <div className="work-field">
-          <p>See my previous work experiences</p>
+          <p>Take a closer look at my previous work experiences and professional background on LinkedIn.</p>
           <p>
             <a href="https://www.linkedin.com/in/eirin-gonzales-5951aa9b/details/experience/" className="clickHere btn-outlined" target="_blank" rel="noopener noreferrer">
-              Click here
+              See my work history
             </a>
           </p>
         </div>

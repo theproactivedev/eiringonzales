@@ -166,7 +166,7 @@
 }
 
 .work-field p:first-of-type {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	margin-bottom: 30px;
 }
 
@@ -180,8 +180,7 @@
 
 
 .clickHere {
-	font-size: 1.625rem;
-	/* 26px */
+	font-size: 1.125rem;
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -227,6 +226,8 @@
 		position: absolute;
 		top: 0;
 		right: 0;
+		padding-left: 32px;
+		text-align: left;
 	}
 
 	.certificate {
