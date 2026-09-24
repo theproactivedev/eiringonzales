@@ -5,6 +5,24 @@ import { assetUrl } from '../utils/assetUrl';
 import './css/home.css';
 
 const Home = () => {
+  const handleContactClick = (event) => {
+    const contactSection = document.getElementById('contact');
+
+    if (!contactSection) {
+      return;
+    }
+
+    event.preventDefault();
+
+    const prefersReducedMotion = typeof window.matchMedia === 'function'
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    contactSection.scrollIntoView({
+      behavior: prefersReducedMotion ? 'auto' : 'smooth',
+      block: 'center',
+    });
+  };
+
   return (
     <main>
       <section className="bgimage home">
@@ -16,9 +34,10 @@ const Home = () => {
             <p className="sub">&#47;&#47; full stack JavaScript developer, working remotely</p>
             <p className="sub">&#47;&#47; does her best to deliver real results on time</p>
             <p className="sub">&#47;&#47; collaborates well with other people</p>
-            <Link to="/contact" className="btn-outlined yes-btn">
+            
+            <a href="#contact" className="btn-outlined yes-btn" onClick={handleContactClick}>
               Let&apos;s chat
-            </Link>
+            </a>
           </section>
         </section>
       </section>
@@ -26,7 +45,7 @@ const Home = () => {
         <div className="skills-module">
           <div className="title">
             <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
-            <p>Someone who turns UI designs into responsive, production-ready applications — front end, back end, and database — without needing constant oversight.</p>
+            <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications — front end, back end, and database — without needing constant oversight.</p>
           </div>
           <div className="value-list">
             <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
@@ -101,22 +120,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact wide-container">
+      <section className="contact wide-container" id="contact">
         <div>
           <div className="page-title">
             <Fade>
               <h3><i className="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>
             </Fade>
           </div>
-          <div className="contact-button">
-            <Link
-              role="button"
-              title="Contact Eirin Gonzales"
-              to="/contact"
-              className="btn-outlined"
-            >
-              Contact me here
-            </Link>
+          <div>
+            <p className="text-muted">Tell me about the project — I'll reply within a day or two.</p>
+            <p>Email me at <a href="mailto:eiringonzales@gmail.com" className="text-pink">eiringonzales@gmail.com</a></p>
           </div>
         </div>
       </section>

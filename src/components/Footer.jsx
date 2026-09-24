@@ -11,13 +11,12 @@ const Footer = () => {
           <h4>Menu</h4>
           <p><a href={assetUrl('assets/eiringonzales_resume.pdf')} target="_blank" rel="noopener noreferrer">See my Resume</a></p>
           {/* <p><Link to="/portfolio">Look at my Portfolio</Link></p> */}
-          <p><Link to="/contact">Contact me here</Link></p>
           <p><a href="https://ph.linkedin.com/in/eirin-gonzales-5951aa9b" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a></p>
         </div>
         <div>
           <h4>Tech Tools Used Here</h4>
           <p>Front End: HTML, CSS, React</p>
-          <p>Assets: Google Fonts, Unsplash.com, Font Awesome Icons, Typeform</p>
+          <p>Assets: Google Fonts, Unsplash.com, Font Awesome Icons</p>
           <p>Hosting: GitHub Pages</p>
         </div>
         <div>

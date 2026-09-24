@@ -44,7 +44,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <a href={assetUrl('assets/eiringonzales_resume.pdf')}>
+              <a href={assetUrl('assets/eiringonzales_resume.pdf')} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>
@@ -65,15 +65,6 @@ const Header = () => {
               >
                 Blog
               </a>
-            </li>
-            <li
-              onClick={() => {
-                setMenuClassName("navigation closed");
-              }}
-            >
-              <Link to="/contact" className="relative">
-                Contact
-              </Link>
             </li>
           </ul>
         </nav>
