@@ -40,8 +40,8 @@ const Home = () => {
             </a>
           </section>
         </section>
-      </section>
-      <section className="introduction wide-container">
+        </section>
+        <section className="introduction wide-container">
         <div className="skills-module">
           <div className="title">
             <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
@@ -68,6 +68,44 @@ const Home = () => {
           <p>
             Outside of the core stack, I'm comfortable researching, learning and deciding what a project needs. And I've used AI tools like Claude, Copilot, and ChatGPT and MCP servers as part of my workflow since 2024, to move faster without losing ownership of the code.
           </p>
+        </div>
+      </section>
+
+      <section className="projects wide-container" id="projects">
+        <div className="wrap">
+          <div className="page-title">
+            <Fade>
+              <h3><i className="fa-solid fa-code"></i>&nbsp;&nbsp;Selected Work</h3>
+            </Fade>
+          </div>
+          <div className="proj-list">
+            <div className="proj">
+              <div>
+                <h4>aiSports</h4>
+                <div className="stackline">React · Redux · Material UI</div>
+              </div>
+              <p>This is a full stack JavaScript application where I translated beautiful <span className="text-pink">Figma</span> designs into responsive, user-friendly interfaces. I used <span className="text-pink">Material UI</span> for the UI components and I applied theming based on the designs. I also used Redux for managing client state.</p>
+              <div className="links"><a href="https://www.aisportspro.com/" target="_blank" rel="noopener noreferrer">View →</a></div>
+            </div>
+
+            <div className="proj">
+              <div>
+                <h4>Tara Kape</h4>
+                <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
+              </div>
+              <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It's like a single-product e-commerce store where user can add coffee items to cart and checkout. It features full CRUD capabilities, Server Actions, API routes, and Next.js route groups to dynamically manage header UI states for authenticated and public users. For payment system, it uses <span className="text-pink">Stripe</span> test mode.</p>
+              <div className="links"><a href="https://tara-kape-qk44ncy22-eg26.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
+            </div>
+            
+            <div className="proj">
+              <div>
+                <h4>NextJS Crash Course</h4>
+                <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
+              </div>
+              <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It allows users to browse developer events, create posts with validated forms and <span className="text-pink">Cloudinary-hosted</span> images, and book event slots. The application implements Create, Read, and Update operations powered by Next.js Server Actions and API routes.</p>
+              <div className="links"><a href="https://nextjs16-jsmastery-crashcourse-efq1kguh6-eg26.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -99,6 +99,58 @@
 	font-family: 'Playfair Display', serif;
 }
 
+/* WORK */
+.projects {
+	background-color: #000;
+	color: #FFF;
+}
+
+.proj {
+	/* display: flex;
+	align-items: start;
+	justify-content: space-between; */
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.proj h4 {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.proj > div,
+.proj > p {
+	padding-top: 24px;
+}
+
+.projects .stackline {
+	color: #FF4D6D;
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	font-size: 1.125rem;
+}
+
+.projects .links {
+	text-align: center;
+}
+
+.projects .links a {
+	color: #FF4D6D;
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.projects .links a:hover {
+	text-decoration: underline;
+}
+
+/* CERTIFICATES */
+
 .certificate {
 	width: 100%;
 	box-sizing: border-box;
