@@ -94,7 +94,7 @@ const Home = () => {
                 <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
               </div>
               <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It's like a single-product e-commerce store where user can add coffee items to cart and checkout. It features full CRUD capabilities, Server Actions, API routes, and Next.js route groups to dynamically manage header UI states for authenticated and public users. For payment system, it uses <span className="text-pink">Stripe</span> test mode.</p>
-              <div className="links"><a href="https://tara-kape-qk44ncy22-eg26.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
+              <div className="links"><a href="https://tara-kape.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
             </div>
             
             <div className="proj">
@@ -103,7 +103,7 @@ const Home = () => {
                 <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
               </div>
               <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It allows users to browse developer events, create posts with validated forms and <span className="text-pink">Cloudinary-hosted</span> images, and book event slots. The application implements Create, Read, and Update operations powered by Next.js Server Actions and API routes.</p>
-              <div className="links"><a href="https://nextjs16-jsmastery-crashcourse-efq1kguh6-eg26.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
+              <div className="links"><a href="https://nextjs16-jsmastery-crashcourse.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
             </div>
           </div>
         </div>
