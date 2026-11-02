@@ -253,7 +253,7 @@ nav ul a:hover,
 .yes-btn:hover {
 	background-color: transparent;
 	border-color: #fff3f2;
-  color: #fff3f2;
+  	color: #fff3f2;
 }
 
 @media screen and (max-width: 470px) {

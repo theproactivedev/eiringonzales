@@ -41,20 +41,30 @@ const Home = () => {
           </section>
         </section>
         </section>
-        <section className="introduction wide-container">
-        <div className="skills-module">
-          <div className="title">
-            <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
-            <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications <span className="text-black">— front end, back end, and database</span> — without needing constant oversight.</p>
+        <section className="introduction gradient-bg wide-container">
+          <div className="skills-module">
+            <div className="title">
+              <p className="skills-kicker"><span aria-hidden="true">✦</span> WHAT I BRING</p>
+              <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
+              <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications <span className="text-black">— front end, back end, and database</span> — without needing constant oversight.</p>
+              <div className="skills-tags" aria-label="Core technologies">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>Mongoose</span>
+                <span>Prisma</span>
+                <span>TailwindCSS</span>
+              </div>
+            </div>
+            <div className="value-list">
+              <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
+              <div className="value-item"><span className="mk">02</span><h3>Comfortable end to end</h3><p>MERN and Next.js projects built solo — front end, APIs, database schema, and deployment included.</p></div>
+              <div className="value-item"><span className="mk">03</span><h3>Works across time zones</h3><p>8 years on distributed teams — collaborates closely with team members, available especially when needed.</p></div>
+              <div className="value-item"><span className="mk">04</span><h3>Learns what the project needs</h3><p>Actively deepening back end skills, and uses AI tools deliberately to move faster without cutting corners.</p></div>
+            </div>
           </div>
-          <div className="value-list">
-            <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
-            <div className="value-item"><span className="mk">02</span><h3>Comfortable end to end</h3><p>MERN and Next.js projects built solo — front end, APIs, database schema, and deployment included.</p></div>
-            <div className="value-item"><span className="mk">03</span><h3>Works across time zones</h3><p>8 years on distributed teams — collaborates closely with team members, available especially when needed.</p></div>
-            <div className="value-item"><span className="mk">04</span><h3>Learns what the project needs</h3><p>Actively deepening back end skills, and uses AI tools deliberately to move faster without cutting corners.</p></div>
-          </div>
-        </div>
-      </section>
+        </section>
 
       <section className="aboutMe">
         <div>
@@ -91,16 +101,32 @@ const Home = () => {
             <div className="proj">
               <div>
                 <h4>Tara Kape</h4>
-                <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
+                <div className="stackline">React · TypeScript · NextJS · MongoDB · Mongoose</div>
               </div>
-              <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It's like a single-product e-commerce store where user can add coffee items to cart and checkout. It features full CRUD capabilities, Server Actions, API routes, and Next.js route groups to dynamically manage header UI states for authenticated and public users. For payment system, it uses <span className="text-pink">Stripe</span> test mode.</p>
+              <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It's like a single-product e-commerce store where user can add coffee items to cart and checkout. It features full CRUD capabilities, Server Actions, API routes, and Next.js route groups to dynamically manage header UI states for authenticated and public users. For payment system, this app simulates the usage of <span className="text-pink">Stripe</span> test mode. And <span className="text-pink">Zustand</span> is opted to use for state management.</p>
               <div className="links"><a href="https://tara-kape.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
+            </div>
+
+            <div className="proj">
+              <div>
+                <h4>We Hustle</h4>
+                <div className="stackline">React · TypeScript · Express.js · Prisma · Postgresql</div>
+              </div>
+              <p>This is a full stack TypeScript job board application. It features full CRUD capabilities and it uses <span className="text-pink">JSON Web Token</span> for authentication. The front-end architecture utilizes <span className="text-pink">TanStack Router</span> for client-side routing and <span className="text-pink">TanStack Query</span> for robust server-state management. To maintain a clean and scalable codebase, APIs, mutations, and query hooks are modularized and segregated by feature. Additionally, <span className="text-pink">Axios</span> is integrated as the primary HTTP client to handle all remote data fetching and API communication.</p>
+              <div className="links"><a href="https://theproactivedev.github.io/we-hustle" target="_blank" rel="noopener noreferrer">View →</a></div>
             </div>
             
             <div className="proj">
               <div>
                 <h4>NextJS Crash Course</h4>
                 <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
+                {/* <div className="skills-tags">
+                  <span className="light-pink">React</span>
+                  <span className="light-pink">TypeScript</span>
+                  <span className="light-pink">NextJS</span>
+                  <span className="light-pink">MongoDB</span>
+                  <span className="light-pink">Mongoose</span>
+                </div> */}
               </div>
               <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It allows users to browse developer events, create posts with validated forms and <span className="text-pink">Cloudinary-hosted</span> images, and book event slots. The application implements Create, Read, and Update operations powered by Next.js Server Actions and API routes.</p>
               <div className="links"><a href="https://nextjs16-jsmastery-crashcourse.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
@@ -154,7 +180,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact wide-container" id="contact">
+      <section className="contact wide-container gradient-bg" id="contact">
         <div>
           <div className="page-title">
             <Fade>
@@ -162,7 +188,7 @@ const Home = () => {
             </Fade>
           </div>
           <div>
-            <p className="text-muted">Tell me about the project — I'll reply within a day or two.</p>
+            <p>Tell me about the project — I'll reply within a day or two.</p>
             <p>Email me at <a href="mailto:eiringonzales@gmail.com" className="text-pink">eiringonzales@gmail.com</a></p>
           </div>
         </div>
