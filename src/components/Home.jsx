@@ -27,41 +27,45 @@ const Home = () => {
     <main>
       <section className="bgimage home">
         <section className="white-overlay">
-          <section className="welcome-message group">
-            <p className="subject">
-              <span className="const">const</span> developer = <span className="developer-name">"Eirin Gonzales"</span>; <span className="blinking"> </span>
-            </p>
-            <p className="sub">&#47;&#47; full stack JavaScript developer, working remotely</p>
-            <p className="sub">&#47;&#47; does her best to deliver real results on time</p>
-            <p className="sub">&#47;&#47; collaborates well with other people</p>
-            
-            <a href="#contact" className="btn-outlined yes-btn" onClick={handleContactClick}>
-              Let&apos;s chat
-            </a>
-          </section>
+          <div className="content">
+            <div className="welcome-message group">
+              <p className="subject">
+                <span className="const">const</span> developer = <span className="developer-name">"Eirin Gonzales"</span>; <span className="blinking"> </span>
+              </p>
+              <p className="sub">&#47;&#47; full stack JavaScript developer, working remotely</p>
+              <p className="sub">&#47;&#47; delivers real results on time</p>
+              <p className="sub">&#47;&#47; available when a need comes up</p>
+              
+              <a href="#contact" className="btn-outlined btn-chat" onClick={handleContactClick}>
+                Let&apos;s chat
+              </a>
+            </div>
+          </div>
         </section>
         </section>
         <section className="introduction gradient-bg wide-container">
-          <div className="skills-module">
-            <div className="title">
-              <p className="skills-kicker"><span aria-hidden="true">✦</span> WHAT I BRING</p>
-              <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
-              <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications <span className="text-black">— front end, back end, and database</span> — without needing constant oversight.</p>
-              <div className="skills-tags" aria-label="Core technologies">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Express.js</span>
-                <span>MongoDB</span>
-                <span>Mongoose</span>
-                <span>Prisma</span>
-                <span>TailwindCSS</span>
+          <div className="content">
+            <div className="skills-module">
+              <div className="title">
+                <p className="skills-kicker"><span aria-hidden="true">✦</span> WHAT I BRING</p>
+                <h2>Looking for a <span className="text-pink">full stack JavaScript developer</span>?</h2>
+                <p className="text-muted">Someone who turns UI designs into responsive, production-ready applications <span className="text-black">— front end, back end, and database</span> — without needing constant oversight.</p>
+                <div className="skills-tags" aria-label="Core technologies">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Express.js</span>
+                  <span>MongoDB</span>
+                  <span>Mongoose</span>
+                  <span>Prisma</span>
+                  <span>TailwindCSS</span>
+                </div>
               </div>
-            </div>
-            <div className="value-list">
-              <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
-              <div className="value-item"><span className="mk">02</span><h3>Comfortable end to end</h3><p>MERN and Next.js projects built solo — front end, APIs, database schema, and deployment included.</p></div>
-              <div className="value-item"><span className="mk">03</span><h3>Works across time zones</h3><p>8 years on distributed teams — collaborates closely with team members, available especially when needed.</p></div>
-              <div className="value-item"><span className="mk">04</span><h3>Learns what the project needs</h3><p>Actively deepening back end skills, and uses AI tools deliberately to move faster without cutting corners.</p></div>
+              <div className="value-list">
+                <div className="value-item"><span className="mk">01</span><h3>Ships production UI</h3><p>Reusable React components, clean styles, fast load times, accessible.</p></div>
+                <div className="value-item"><span className="mk">02</span><h3>Comfortable end to end</h3><p>MERN and Next.js projects built solo — front end, APIs, database schema, and deployment included.</p></div>
+                <div className="value-item"><span className="mk">03</span><h3>Works across time zones</h3><p>8 years on distributed teams — collaborates closely with team members, available especially when needed.</p></div>
+                <div className="value-item"><span className="mk">04</span><h3>Learns what the project needs</h3><p>Actively deepening back end skills, and uses AI tools deliberately to move faster without cutting corners.</p></div>
+              </div>
             </div>
           </div>
         </section>
@@ -82,89 +86,93 @@ const Home = () => {
       </section>
 
       <section className="projects wide-container" id="projects">
-        <div className="wrap">
-          <div className="page-title">
-            <Fade>
-              <h3><i className="fa-solid fa-code"></i>&nbsp;&nbsp;Selected Work</h3>
-            </Fade>
-          </div>
-          <div className="proj-list">
-            <div className="proj">
-              <div>
-                <h4>aiSports</h4>
-                <div className="stackline">React · Redux · Material UI</div>
-              </div>
-              <p>This is a full stack JavaScript application where I translated beautiful <span className="text-pink">Figma</span> designs into responsive, user-friendly interfaces. I used <span className="text-pink">Material UI</span> for the UI components and I applied theming based on the designs. I also used Redux for managing client state.</p>
-              <div className="links"><a href="https://www.aisportspro.com/" target="_blank" rel="noopener noreferrer">View →</a></div>
+        <div className="content">
+          <div className="wrap">
+            <div className="page-title">
+              <Fade>
+                <h3><i className="fa-solid fa-code"></i>&nbsp;&nbsp;Selected Work</h3>
+              </Fade>
             </div>
+            <div className="proj-list">
+              <div className="proj">
+                <div>
+                  <h4>aiSports</h4>
+                  <div className="stackline">React · Redux · Material UI</div>
+                </div>
+                <p>This is a full stack JavaScript application where I translated beautiful <span className="text-pink">Figma</span> designs into responsive, user-friendly interfaces. I used <span className="text-pink">Material UI</span> for the UI components and I applied theming based on the designs. I also used Redux for managing client state.</p>
+                <div className="links"><a href="https://www.aisportspro.com/" target="_blank" rel="noopener noreferrer">View →</a></div>
+              </div>
 
-            <div className="proj">
-              <div>
-                <h4>Tara Kape</h4>
-                <div className="stackline">React · TypeScript · NextJS · MongoDB · Mongoose</div>
+              <div className="proj">
+                <div>
+                  <h4>Tara Kape</h4>
+                  <div className="stackline">React · TypeScript · NextJS · MongoDB · Mongoose</div>
+                </div>
+                <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It's like a single-product e-commerce store where user can add coffee items to cart and checkout. It features full CRUD capabilities, Server Actions, API routes, and Next.js route groups to dynamically manage header UI states for authenticated and public users. For payment system, this app simulates the usage of <span className="text-pink">Stripe</span> test mode. And <span className="text-pink">Zustand</span> is opted to use for state management.</p>
+                <div className="links"><a href="https://tara-kape.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
               </div>
-              <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It's like a single-product e-commerce store where user can add coffee items to cart and checkout. It features full CRUD capabilities, Server Actions, API routes, and Next.js route groups to dynamically manage header UI states for authenticated and public users. For payment system, this app simulates the usage of <span className="text-pink">Stripe</span> test mode. And <span className="text-pink">Zustand</span> is opted to use for state management.</p>
-              <div className="links"><a href="https://tara-kape.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
-            </div>
 
-            <div className="proj">
-              <div>
-                <h4>We Hustle</h4>
-                <div className="stackline">React · TypeScript · Express.js · Prisma · Postgresql</div>
+              <div className="proj">
+                <div>
+                  <h4>We Hustle</h4>
+                  <div className="stackline">React · TypeScript · Express.js · Prisma · Postgresql</div>
+                </div>
+                <p>This is a full stack TypeScript job board application. It features full CRUD capabilities and it uses <span className="text-pink">JSON Web Token</span> for authentication. The front-end architecture utilizes <span className="text-pink">TanStack Router</span> for client-side routing and <span className="text-pink">TanStack Query</span> for robust server-state management. To maintain a clean and scalable codebase, APIs, mutations, and query hooks are modularized and segregated by feature. Additionally, <span className="text-pink">Axios</span> is integrated as the primary HTTP client to handle all remote data fetching and API communication.</p>
+                <div className="links"><a href="https://theproactivedev.github.io/we-hustle" target="_blank" rel="noopener noreferrer">View →</a></div>
               </div>
-              <p>This is a full stack TypeScript job board application. It features full CRUD capabilities and it uses <span className="text-pink">JSON Web Token</span> for authentication. The front-end architecture utilizes <span className="text-pink">TanStack Router</span> for client-side routing and <span className="text-pink">TanStack Query</span> for robust server-state management. To maintain a clean and scalable codebase, APIs, mutations, and query hooks are modularized and segregated by feature. Additionally, <span className="text-pink">Axios</span> is integrated as the primary HTTP client to handle all remote data fetching and API communication.</p>
-              <div className="links"><a href="https://theproactivedev.github.io/we-hustle" target="_blank" rel="noopener noreferrer">View →</a></div>
-            </div>
-            
-            <div className="proj">
-              <div>
-                <h4>NextJS Crash Course</h4>
-                <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
-                {/* <div className="skills-tags">
-                  <span className="light-pink">React</span>
-                  <span className="light-pink">TypeScript</span>
-                  <span className="light-pink">NextJS</span>
-                  <span className="light-pink">MongoDB</span>
-                  <span className="light-pink">Mongoose</span>
-                </div> */}
+              
+              <div className="proj">
+                <div>
+                  <h4>NextJS Crash Course</h4>
+                  <div className="stackline">React · NextJS · MongoDB · Mongoose</div>
+                  {/* <div className="skills-tags">
+                    <span className="light-pink">React</span>
+                    <span className="light-pink">TypeScript</span>
+                    <span className="light-pink">NextJS</span>
+                    <span className="light-pink">MongoDB</span>
+                    <span className="light-pink">Mongoose</span>
+                  </div> */}
+                </div>
+                <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It allows users to browse developer events, create posts with validated forms and <span className="text-pink">Cloudinary-hosted</span> images, and book event slots. The application implements Create, Read, and Update operations powered by Next.js Server Actions and API routes.</p>
+                <div className="links"><a href="https://nextjs16-jsmastery-crashcourse.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
               </div>
-              <p>A full-stack JavaScript web app built with <span className="text-pink">Next.js, React, and MongoDB (via Mongoose)</span>. It allows users to browse developer events, create posts with validated forms and <span className="text-pink">Cloudinary-hosted</span> images, and book event slots. The application implements Create, Read, and Update operations powered by Next.js Server Actions and API routes.</p>
-              <div className="links"><a href="https://nextjs16-jsmastery-crashcourse.vercel.app/" target="_blank" rel="noopener noreferrer">View →</a></div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="certificates wide-container">
-        <div className="page-title">
-          <Fade>
-            <h3><i className="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
-          </Fade>
-        </div>
-        <div className="certificate">
-          <div className="skills-module">
-            <a
-              href="https://www.freecodecamp.org/certification/theproactivedev/legacy-front-end"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={assetUrl('assets/portfolio/freecodecamp-certificate.png')}
-                alt="Free Code Camp Front End Certificate"
-              />
-            </a>
+        <div className="content">
+          <div className="page-title">
+            <Fade>
+              <h3><i className="fa-solid fa-award"></i>&nbsp;Free Code Camp Certificates</h3>
+            </Fade>
           </div>
-          <div className="skills-module">
-            <a
-              href="https://www.freecodecamp.org/certification/theproactivedev/legacy-back-end"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={assetUrl('assets/portfolio/back_end_dev.jpg')}
-                alt="Free Code Camp Back End Certificate"
-              />
-            </a>
+          <div className="certificate">
+            <div className="skills-module">
+              <a
+                href="https://www.freecodecamp.org/certification/theproactivedev/legacy-front-end"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={assetUrl('assets/portfolio/freecodecamp-certificate.png')}
+                  alt="Free Code Camp Front End Certificate"
+                />
+              </a>
+            </div>
+            <div className="skills-module">
+              <a
+                href="https://www.freecodecamp.org/certification/theproactivedev/legacy-back-end"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={assetUrl('assets/portfolio/back_end_dev.jpg')}
+                  alt="Free Code Camp Back End Certificate"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -173,7 +181,7 @@ const Home = () => {
         <div className="work-field">
           <p>Take a closer look at my previous work experiences and professional background on LinkedIn.</p>
           <p>
-            <a href="https://www.linkedin.com/in/eirin-gonzales-5951aa9b/details/experience/" className="clickHere btn-outlined" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/eirin-gonzales-5951aa9b/details/experience/" className="btn-work-history btn-outlined" target="_blank" rel="noopener noreferrer">
               See my work history
             </a>
           </p>
@@ -181,7 +189,7 @@ const Home = () => {
       </section>
 
       <section className="contact wide-container gradient-bg" id="contact">
-        <div>
+        <div className="content">
           <div className="page-title">
             <Fade>
               <h3><i className="fa-solid fa-hammer"></i>&nbsp;&nbsp;Let's build something worth shipping.</h3>

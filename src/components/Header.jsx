@@ -8,8 +8,7 @@ const Header = () => {
 
   return (
     <header>
-      <section className="container">
-      <section className="header">
+      <section className="header content">
         <div>
           <h1>
             <Link to="/">Eirin<span className="text-pink"><strong>.</strong></span>Gonzales</Link>
@@ -69,7 +68,6 @@ const Header = () => {
           </ul>
         </nav>
       </section>
-    </section>
     </header>
   );
 }

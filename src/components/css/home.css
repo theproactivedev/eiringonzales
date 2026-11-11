@@ -27,7 +27,7 @@
 	align-items: center;
 	gap: 9px;
 	margin-bottom: 18px;
-	color: #a93650;
+	color: var(--color-accent-dark);
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: .95rem;
 	letter-spacing: 2px;
@@ -46,16 +46,16 @@
 
 .skills-tags span {
 	padding: 7px 12px;
-	border: 1px solid rgba(169, 54, 80, .2);
+	border: 1px solid var(--color-accent-border);
 	border-radius: 999px;
-	background: rgba(255, 255, 255, .55);
-	color: #5c5d6c;
+	background: var(--color-chip-background);
+	color: var(--muted);
 	font-size: .78rem;
 	font-weight: 600;
 }
 
 .skills-tags span.light-pink {
-	background: #f9e2d8;
+	background: var(--color-gradient-end);
 }
 
 .value-list {
@@ -70,16 +70,16 @@
 	min-height: 190px;
 	overflow: hidden;
 	padding: 24px;
-	border: 1px solid rgba(28, 29, 39, .08);
+	border: 1px solid var(--color-card-border);
 	border-radius: 12px;
-	background: rgba(255, 255, 255, .76);
-	box-shadow: 0 8px 24px rgba(67, 43, 42, .05);
+	background: var(--color-card-background);
+	box-shadow: 0 8px 24px var(--color-card-shadow);
 	transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .value-item:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 14px 30px rgba(67, 43, 42, .1);
+	box-shadow: 0 14px 30px var(--color-card-shadow-hover);
 }
 
 .value-item .mk {
@@ -89,8 +89,8 @@
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
-	background: #fff0f2;
-	color: #FF4D6D;
+	background: var(--color-light-pink);
+	color: var(--color-accent);
 	font-size: .85rem;
 	font-weight: 700;
 }
@@ -115,7 +115,7 @@
 
 .aboutMe {
 	width: 100%;
-	background-color: #000;
+	background-color: var(--color-black);
 	background-image: url('/assets/me.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -129,7 +129,7 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: var(--color-about-overlay);
 	box-sizing: border-box;
 	box-shadow: none;
 	padding: 20px;
@@ -149,15 +149,15 @@
 
 /* WORK */
 .projects {
-	background-color: #000;
-	color: #FFF;
+	background-color: var(--color-black);
+	color: var(--color-white);
 }
 
 .proj {
 	/* display: flex;
 	align-items: start;
 	justify-content: space-between; */
-	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	border-bottom: 1px solid var(--color-white-border);
 	padding: 20px 0;
 	display: grid;
 	gap: 16px;
@@ -166,7 +166,7 @@
 .proj h4 {
 	margin-top: 0;
 	margin-bottom: 16px;
-	color: #FF4D6D;
+	color: var(--color-accent);
 	font-size: 1.25rem;
 	letter-spacing: 0.5px;
 }
@@ -188,7 +188,7 @@
 }
 
 .projects .links a {
-	color: #FF4D6D;
+	color: var(--color-accent);
 	font-family: 'Pathway Gothic One', sans-serif;
 	letter-spacing: 0.5px;
 	font-size: 1rem;
@@ -215,14 +215,14 @@
 	display: block;
 	margin: 0 auto;
 	height: 250px;
-	box-shadow: 0 8px 24px rgba(67, 43, 42, .05);
+	box-shadow: 0 8px 24px var(--color-card-shadow);
 	transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .certificate img:hover {
 	/* box-shadow: 0 0 20px 0 #c4c4c4; */
 	transform: translateY(-4px);
-	box-shadow: 0 14px 30px rgba(67, 43, 42, .1);
+	box-shadow: 0 14px 30px var(--color-card-shadow-hover);
 }
 
 /* ANIMATIONS */
@@ -266,7 +266,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 0 20px;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: var(--color-work-overlay);
 	text-align: center;
 }
 
@@ -284,18 +284,18 @@
 }
 
 
-.clickHere {
+.btn-work-history {
 	font-size: 1.125rem;
 	font-family: 'Pathway Gothic One', sans-serif;
-	background-color: #FF4D6D;
-	border-color: #FF4D6D;
-	color: #fff3f2;
+	background-color: var(--color-accent);
+	border-color: var(--color-accent);
+	color: var(--color-off-white);
 }
 
-.clickHere:hover {
-	border: 1px solid #000;
-	color: #000;
-	background-color: transparent;
+.btn-work-history:hover {
+	border: 1px solid var(--color-black);
+	color: var(--color-black);
+	background-color: var(--color-transparent);
 }
 
 @media screen and (min-width: 660px) {
